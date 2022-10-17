@@ -27,11 +27,9 @@ class Queue {
     this.tail = null;
     this.length = 0;
   }
-
   getUnderlyingList() {
     return this.head;
   }
-
   enqueue(value) {
     let node = new Node(value);
 
@@ -45,7 +43,6 @@ class Queue {
 
     this.length++;
   }
-
   dequeue() {
     if(this.length === 0) return;
     const value = this.head.value;

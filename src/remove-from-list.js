@@ -28,9 +28,7 @@ function removeKFromList(l, k ) {
   while(l.value === k) {
     l = l.next;
   }
-
   let current = l;
-
   while(current.next) {
     if (current.next.value === k) {
       current.next = current.next.next;
@@ -38,7 +36,6 @@ function removeKFromList(l, k ) {
       current = current.next;
     }
   }
-
   return l;
 }
 
